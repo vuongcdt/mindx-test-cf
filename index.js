@@ -55,7 +55,7 @@ $btn.onclick = async (event) => {
   if (inputValue) {
     $error.innerHTML = "";
     const response = await fetch(
-      `https://api.shrtco.de/v2/shorten?url=${inputValue}/very/long/link.html`
+      `https://api.shrtco.de/v2/shorten?url=${inputValue}`
     );
     const myJson = await response.json();
     console.log(myJson.ok);
